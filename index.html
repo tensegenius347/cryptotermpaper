@@ -1,0 +1,195 @@
+<!-- Latest compiled and minified CSS -->
+<Html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="col-md-6 col-md-offset-3">
+  <h2>Code Emoji Clone | <small>Crypto Term Paper</small><img class="pull-right" src="loader6.gif"></h2>
+  <hr><br>
+ <textarea class="form-control msg" name="name" rows="8" cols="80"></textarea>
+  </div>
+  <br>
+<div class="col-md-6 col-md-offset-3">
+<br><br>
+<hr>
+  <p>
+    <span><img id="1" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f601.svg"></span>
+    <span><img id="2" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f602.svg"></span>
+    <span><img id="3" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f603.svg"></span>
+    <span><img id="4" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f604.svg"></span>
+  <span><img id="5" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f605.svg"></span>
+  <span><img id="6" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f606.svg"></span>
+  <span><img id="7" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f607.svg"></span>
+  <span><img id="8" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f608.svg"></span>
+  <span><img id="9" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f609.svg"></span>
+  <span><img id="10" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f610.svg"></span>
+  <span><img id="11" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f611.svg"></span>
+  <span><img id="12" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f612.svg"></span>
+  <span><img id="13" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f613.svg"></span>
+  <span><img id="14" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f614.svg"></span>
+  <span><img id="15" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f615.svg"></span>
+  <span><img id="16" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f616.svg"></span>
+  <span><img id="17" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f617.svg"></span>
+  <span><img id="18" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f618.svg"></span>
+  <span><img id="19" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f619.svg"></span>
+  <span><img id="20" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f620.svg"></span>
+  <span><img id="21" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f621.svg"></span>
+  <span><img id=22 class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f622.svg"></span>
+  <span><img id="23" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f623.svg"></span>
+  <span><img id="24" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f624.svg"></span>
+  <span><img id="25" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f625.svg"></span>
+  <span><img id="26" class="emoji" style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f626.svg"></span>
+
+  </p>
+  <hr>
+
+  </div>
+  <div class="col-md-6 col-md-offset-3">
+    <h3>Result : <span id="res">  <span><img style="height:50px;" draggable="false" src="https://twemoji.maxcdn.com/svg/1f626.svg"></span></span></h3>
+    <hr>
+    </div>
+
+
+
+
+    <div class="col-md-6 col-md-offset-3">
+
+      </div>
+      <div class="col-md-6 col-md-offset-3">
+      <h3>Group Members</h3>
+      <hr>
+      <span>Tadiwanashe Chigwedere</span> |
+      <span>Nevile Mahove</span> |
+      <span>Simba Chin'ombe</span> |
+      <span>Blessing Njekezana</span> |
+      <span>Mcnilly Goshomi</span> |
+      <span>Kudakwashe Tungwa</span>
+
+        </div>
+</html>
+<script>
+  $(document).ready(function(){
+
+    $(".msg").keypress(function(event){
+        var inputValue = event.which;
+        // allow letters and whitespaces only.
+        if(!(inputValue >= 65 && inputValue <= 120) && (inputValue != 32 && inputValue != 0 && inputValue != 8)) {
+            event.preventDefault();
+        }
+    });
+});
+
+  $('.emoji').on('click', function()
+  {
+    var id = $(this).attr("id");
+    var plaintext = $('.msg').val();
+    var encrypted = "";
+    if( id != null && plaintext != "" && plaintext != null )
+    {
+      //alert(id);
+      //alert(plaintext);
+      plaintext = plaintext.toUpperCase();
+      //alert(plaintext);
+      encrypted = shift(plaintext,id);
+      //alert(encrypted);
+      emojyz(encrypted);
+    }else {
+      alert("Please enter text to encrypt");
+    }
+  });
+
+
+    function emojyz(str)
+    {
+      var chars = str.split('');
+      var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var lts = letters.split('');
+      var emojs = [];
+      //alert(chars);
+
+    chars.forEach(function(entry){
+
+      var ctr = 0;
+
+      lts.forEach(function(letter){
+
+        ctr = ctr + 1;
+      //  alert(ctr);
+
+       if(letter == entry)
+       {
+         emojs.push(ctr);
+    //   alert(letter + " - " + entry);
+  //     alert("emjs = " + emojs);
+
+       }
+
+
+      });
+
+      //add emojies to page
+      $('#res').html("");
+      emojs.forEach(function(emoji){
+//        alert("emoji : " + emoji);
+
+        var span_ele = document.createElement("span");
+        var emoji_img = document.createElement("img");
+        var main_span = document.getElementById("res");
+
+        if(emoji < 10)
+        {
+           emoji_img.src = "https://twemoji.maxcdn.com/svg/1f60"+emoji+".svg";
+        }else {
+           emoji_img.src = "https://twemoji.maxcdn.com/svg/1f6"+emoji+".svg";
+        }
+
+        emoji_img.style.height="50px";
+        span_ele.appendChild(emoji_img);
+        main_span.appendChild(span_ele);
+
+
+
+
+          });
+
+
+    });
+
+
+
+  }
+
+
+function shift(str, n) {
+	var shifted = '';
+	n = n%26;
+	for (var i = 0; i < str.length; i++) {
+		let code = str[i].charCodeAt();
+    let capital = (code > 64 && code < 91) ? true : false;
+    if (code < (capital?65:97) || code > (capital?90:122) || n == 0) {
+      shifted += str[i];
+      continue;
+    }
+    if (n > 0) {
+      if (code > (capital?90:122)-n) {
+  			code = n + code - 26;
+  		} else {
+  			code += n;
+  		}
+    } else {
+      if (code < (capital?65:97)-n) {
+  			code = code + n + 26;
+  		} else {
+  			code += n;
+  		}
+    }
+		shifted += String.fromCharCode(code);
+	}
+	return shifted;
+}
+
+</script>
